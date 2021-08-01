@@ -19,8 +19,8 @@ function App() {
 
   return (
     <div>
-      <h1>Количество рендеров: {renderCount.current}</h1>
-      <h2>Прошлое состояние: {prevValue.current}</h2>
+      <h1>Кількість рендерів: {renderCount.current}</h1>
+      <h2>Минулий стан: {prevValue.current}</h2>
       <input ref={inputRef} type="text" onChange={e => setValue(e.target.value)} value={value} />
       <button className="btn btn-success" onClick={focus}>Фокус</button>
     </div>
