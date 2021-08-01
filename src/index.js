@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './hooks-examples/memo';
+import App from './hooks-examples/callback';
 
 ReactDOM.render(
     <App />,

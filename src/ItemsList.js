@@ -4,7 +4,7 @@ export default function ItemsList({ getItems }) {
   const [items, setItems] = useState([])
 
   useEffect(() => {
-    const newItems = getItems(42)
+    const newItems = getItems(13)
     setItems(newItems)
     console.log('render')
   }, [getItems])
