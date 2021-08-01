@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react';
 
 export default function App() {
   let myCounter = 0;
@@ -17,5 +17,5 @@ export default function App() {
       <button onClick={increment} className="btn btn-outline-success">Додати</button>
       <button onClick={decrement} className="btn btn-outline-danger">Видалити</button>
     </div>
-  )
+  );
 }
