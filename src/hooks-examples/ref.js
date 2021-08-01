@@ -8,15 +8,15 @@ function App() {
   const prevValue = useRef('')
 
   useEffect(() => {
-    // setRenderCount(prevState => prevState + 1 )
+    // setRenderCount(prevState => prevState + 1 ) //who can to fix it?
     renderCount.current++
-  }, )
+  })
 
   useEffect(() => {
     prevValue.current = value
   }, [value])
 
-  const focus = () => inputRef.current.focus()
+  const focus = () => inputRef.current.focus() //ref.current it is just a DOM element
 
   return (
     <div>
