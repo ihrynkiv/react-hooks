@@ -8,8 +8,9 @@ function App() {
   const prevValue = useRef('')
 
   useEffect(() => {
+    // setRenderCount(prevState => prevState + 1 )
     renderCount.current++
-  })
+  }, )
 
   useEffect(() => {
     prevValue.current = value
@@ -19,6 +20,7 @@ function App() {
 
   return (
     <div>
+      {/*<h1>Кількість рендерів: {renderCount}</h1>*/}
       <h1>Кількість рендерів: {renderCount.current}</h1>
       <h2>Минулий стан: {prevValue.current}</h2>
       <input ref={inputRef} type="text" onChange={e => setValue(e.target.value)} value={value} />
