@@ -33,7 +33,7 @@ function App() {
 
   return (
     <div>
-      <h1>Счетчик: {counter}</h1>
+      <h1>Лічильник: {counter}</h1>
       <button onClick={() => increment(5)} className="btn btn-outline-success">Додати</button>
       <button onClick={() => setCounter((prevState => --prevState))} className="btn btn-outline-danger">Видалити</button>
       <button onClick={random} className="btn btn-outline-warning">Рандом</button>
